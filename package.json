@@ -8,14 +8,17 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/thecodemonkey/action-get-gradle-version.git"
+    "url": "git+https://github.com/EmberCM/action-get-gradle-version.git"
   },
-  "keywords": ["gradle", "version"],
+  "keywords": [
+    "gradle",
+    "version"
+  ],
   "author": "TheCodemonkey",
   "license": "ISC",
-  "homepage": "https://github.com/thecodemonkey/action-get-gradle-version/",
+  "homepage": "https://github.com/EmberCM/action-get-gradle-version/",
   "dependencies": {
-    "@actions/core": "^1.2.6",
-    "@actions/github": "^1.1.0"
+    "@actions/core": "^1.10.0",
+    "@actions/github": "^5.1.1"
   }
 }
