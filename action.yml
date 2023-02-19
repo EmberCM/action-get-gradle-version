@@ -1,4 +1,4 @@
-name: 'Get gradle version action'
+name: 'Get Gradle build version'
 description: 'Extracts the version string from the build.gradle file'
 inputs:
   file:
