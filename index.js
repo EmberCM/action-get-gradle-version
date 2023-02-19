@@ -3,9 +3,8 @@ const core = require('@actions/core');
 
 try {
   const file = core.getInput('file') || 'build.gradle';
-  console.log(`Using ${file}`);
-  const bg = fs.readFileSync(file) + "";
-  
+  const bg = fs.readFileSync(file).toString();
+
   let version = 'latest';
 
   bg.split("\n").forEach((r) => {
@@ -13,9 +12,8 @@ try {
       version = r.replace(/(version|=|"| )/g, "");
     }
   });
-  
-  console.log(version);
-  core.setOutput("version", version);
+
+  core.exportVariable("VERSION", version);
 } catch (error) {
   core.setFailed(error.message);
 }
