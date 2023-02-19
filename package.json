@@ -14,7 +14,7 @@
     "gradle",
     "version"
   ],
-  "author": "TheCodemonkey",
+  "author": "EmberCM",
   "license": "ISC",
   "homepage": "https://github.com/EmberCM/action-get-gradle-version/",
   "dependencies": {
